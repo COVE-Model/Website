@@ -1,0 +1,183 @@
+\hypertarget{classWave}{\section{Wave Class Reference}
+\label{classWave}\index{Wave@{Wave}}
+}
+
+
+Single wave object, containing a direction, height and period.  
+
+
+
+
+{\ttfamily \#include $<$waveclimate.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWave_a3d8144ec0d6c0b0ede77ff59f54471aa}{Wave} ()
+\begin{DoxyCompactList}\small\item\em Initialise function. This is an empty intialisation and thus throws an error. \end{DoxyCompactList}\item 
+\hyperlink{classWave_abeca06948654c515bb8c42f1610bd161}{Wave} (double Wv\-Prd, double Wv\-Hgt, double Wv\-Dir)
+\begin{DoxyCompactList}\small\item\em Initialise function. Creates a wave object from wave parameters. \end{DoxyCompactList}\item 
+void \hyperlink{classWave_aec0664696d6df103f14fde5b8337db9a}{Assign\-Wave\-Direction} (double Wv\-Dir)
+\item 
+void \hyperlink{classWave_ae0a0a3d5a698f5477e3181eb8b2c5948}{Assign\-Wave\-Height} (double Wv\-Hgt)
+\item 
+void \hyperlink{classWave_aaf0e9f1666aa20ec6442c77536aa700a}{Assign\-Wave\-Period} (double Wv\-Prd)
+\item 
+double \hyperlink{classWave_ac6cd4c117a447dcc1cf27bef9a93a6bd}{Get\-\_\-\-Wave\-Period} ()
+\begin{DoxyCompactList}\small\item\em Gets wave period value. \end{DoxyCompactList}\item 
+double \hyperlink{classWave_a2c4fac2cb35b549bf9fbdfe9c0adcf8a}{Get\-\_\-\-Wave\-Direction} ()
+\begin{DoxyCompactList}\small\item\em Gets wave height value. \end{DoxyCompactList}\item 
+double \hyperlink{classWave_a75e11cdebacdfdcba0420e421a56ce5d}{Get\-\_\-\-Wave\-Height} ()
+\begin{DoxyCompactList}\small\item\em Gets wave direction value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Single wave object, containing a direction, height and period. 
+
+\begin{DoxyAuthor}{Author}
+Martin D. Hurst 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+26/10/2015 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWave_a3d8144ec0d6c0b0ede77ff59f54471aa}{\index{Wave@{Wave}!Wave@{Wave}}
+\index{Wave@{Wave}!Wave@{Wave}}
+\subsubsection[{Wave}]{\setlength{\rightskip}{0pt plus 5cm}Wave\-::\-Wave (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classWave_a3d8144ec0d6c0b0ede77ff59f54471aa}
+
+
+Initialise function. This is an empty intialisation and thus throws an error. 
+
+\begin{DoxyAuthor}{Author}
+Martin D. Hurst 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+26/10/2015 
+\end{DoxyDate}
+\hypertarget{classWave_abeca06948654c515bb8c42f1610bd161}{\index{Wave@{Wave}!Wave@{Wave}}
+\index{Wave@{Wave}!Wave@{Wave}}
+\subsubsection[{Wave}]{\setlength{\rightskip}{0pt plus 5cm}Wave\-::\-Wave (
+\begin{DoxyParamCaption}
+\item[{double}]{Wv\-Prd, }
+\item[{double}]{Wv\-Hgt, }
+\item[{double}]{Wv\-Dir}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classWave_abeca06948654c515bb8c42f1610bd161}
+
+
+Initialise function. Creates a wave object from wave parameters. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classWave}{Wave} 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em Wv\-Prd} & Double, the wave period (seconds). \\
+\hline
+{\em Wv\-Hgt} & Double, the wave height (metres). \\
+\hline
+{\em Wv\-Dir} & Double, the wave direction (azimuth). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Martin D. Hurst 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+26/10/2015 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWave_aec0664696d6df103f14fde5b8337db9a}{\index{Wave@{Wave}!Assign\-Wave\-Direction@{Assign\-Wave\-Direction}}
+\index{Assign\-Wave\-Direction@{Assign\-Wave\-Direction}!Wave@{Wave}}
+\subsubsection[{Assign\-Wave\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}void Wave\-::\-Assign\-Wave\-Direction (
+\begin{DoxyParamCaption}
+\item[{double}]{Wv\-Dir}
+\end{DoxyParamCaption}
+)}}\label{classWave_aec0664696d6df103f14fde5b8337db9a}
+\hypertarget{classWave_ae0a0a3d5a698f5477e3181eb8b2c5948}{\index{Wave@{Wave}!Assign\-Wave\-Height@{Assign\-Wave\-Height}}
+\index{Assign\-Wave\-Height@{Assign\-Wave\-Height}!Wave@{Wave}}
+\subsubsection[{Assign\-Wave\-Height}]{\setlength{\rightskip}{0pt plus 5cm}void Wave\-::\-Assign\-Wave\-Height (
+\begin{DoxyParamCaption}
+\item[{double}]{Wv\-Hgt}
+\end{DoxyParamCaption}
+)}}\label{classWave_ae0a0a3d5a698f5477e3181eb8b2c5948}
+\hypertarget{classWave_aaf0e9f1666aa20ec6442c77536aa700a}{\index{Wave@{Wave}!Assign\-Wave\-Period@{Assign\-Wave\-Period}}
+\index{Assign\-Wave\-Period@{Assign\-Wave\-Period}!Wave@{Wave}}
+\subsubsection[{Assign\-Wave\-Period}]{\setlength{\rightskip}{0pt plus 5cm}void Wave\-::\-Assign\-Wave\-Period (
+\begin{DoxyParamCaption}
+\item[{double}]{Wv\-Prd}
+\end{DoxyParamCaption}
+)}}\label{classWave_aaf0e9f1666aa20ec6442c77536aa700a}
+\hypertarget{classWave_a2c4fac2cb35b549bf9fbdfe9c0adcf8a}{\index{Wave@{Wave}!Get\-\_\-\-Wave\-Direction@{Get\-\_\-\-Wave\-Direction}}
+\index{Get\-\_\-\-Wave\-Direction@{Get\-\_\-\-Wave\-Direction}!Wave@{Wave}}
+\subsubsection[{Get\-\_\-\-Wave\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}double Wave\-::\-Get\-\_\-\-Wave\-Direction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classWave_a2c4fac2cb35b549bf9fbdfe9c0adcf8a}
+
+
+Gets wave height value. 
+
+\begin{DoxyReturn}{Returns}
+Double, wave height. 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Martin D. Hurst 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+26/10/2015 
+\end{DoxyDate}
+\hypertarget{classWave_a75e11cdebacdfdcba0420e421a56ce5d}{\index{Wave@{Wave}!Get\-\_\-\-Wave\-Height@{Get\-\_\-\-Wave\-Height}}
+\index{Get\-\_\-\-Wave\-Height@{Get\-\_\-\-Wave\-Height}!Wave@{Wave}}
+\subsubsection[{Get\-\_\-\-Wave\-Height}]{\setlength{\rightskip}{0pt plus 5cm}double Wave\-::\-Get\-\_\-\-Wave\-Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classWave_a75e11cdebacdfdcba0420e421a56ce5d}
+
+
+Gets wave direction value. 
+
+\begin{DoxyReturn}{Returns}
+Double, wave direction. 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Martin D. Hurst 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+26/10/2015 
+\end{DoxyDate}
+\hypertarget{classWave_ac6cd4c117a447dcc1cf27bef9a93a6bd}{\index{Wave@{Wave}!Get\-\_\-\-Wave\-Period@{Get\-\_\-\-Wave\-Period}}
+\index{Get\-\_\-\-Wave\-Period@{Get\-\_\-\-Wave\-Period}!Wave@{Wave}}
+\subsubsection[{Get\-\_\-\-Wave\-Period}]{\setlength{\rightskip}{0pt plus 5cm}double Wave\-::\-Get\-\_\-\-Wave\-Period (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classWave_ac6cd4c117a447dcc1cf27bef9a93a6bd}
+
+
+Gets wave period value. 
+
+\begin{DoxyReturn}{Returns}
+Double, wave period. 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Martin D. Hurst 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+26/10/2015 
+\end{DoxyDate}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{waveclimate_8hpp}{waveclimate.\-hpp}\item 
+\hyperlink{waveclimate_8cpp}{waveclimate.\-cpp}\end{DoxyCompactItemize}

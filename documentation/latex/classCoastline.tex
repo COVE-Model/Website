@@ -1,0 +1,513 @@
+\hypertarget{classCoastline}{\section{Coastline Class Reference}
+\label{classCoastline}\index{Coastline@{Coastline}}
+}
+
+
+coastline class object for evolving a vector coastline.  
+
+
+
+
+{\ttfamily \#include $<$coastline.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCoastline_ab936a554bb354b7311555ed83348f608}{Coastline} ()
+\begin{DoxyCompactList}\small\item\em Initialise function. This is an empty intialisation and thus throws an error. \end{DoxyCompactList}\item 
+\hyperlink{classCoastline_a64f685e01116a4e79055a07632359221}{Coastline} (string xyfilename)
+\begin{DoxyCompactList}\small\item\em Initialise function. Creates a \hyperlink{classCoastline}{Coastline} object from a file containing x and y data. \end{DoxyCompactList}\item 
+\hyperlink{classCoastline_a4c1f09b298f867ecc1a7616ae1e7a6a5}{Coastline} (string xyfilename, float Start\-Time)
+\begin{DoxyCompactList}\small\item\em Initialise function. Creates a \hyperlink{classCoastline}{Coastline} object from a file containing x and y data at a specified time. \end{DoxyCompactList}\item 
+\hyperlink{classCoastline_a242aa493f86e0b76c5866caf2e3dd2bf}{Coastline} (int Mean\-Node\-Spacing, double Coast\-Length, double Trend, int Start\-Boundary, int End\-Boundary)
+\begin{DoxyCompactList}\small\item\em Initialise function. Creates a \hyperlink{classCoastline}{Coastline} object as a straight line following an azimuth. \end{DoxyCompactList}\item 
+void \hyperlink{classCoastline_ad901fe37293a0c16c37642d8f8d6e481}{Read\-Coast} (string Input\-File\-Name, double Time)
+\begin{DoxyCompactList}\small\item\em Function to read a coastline from a file at a given time. \end{DoxyCompactList}\item 
+void \hyperlink{classCoastline_a032c2f5c5c956daca79c5df94e56caf7}{Write\-Coast} (string Output\-File\-Name, double Time)
+\begin{DoxyCompactList}\small\item\em Function to write a coastline to a file at a given time. \end{DoxyCompactList}\item 
+void \hyperlink{classCoastline_a0642cbf3fc04602bf1d2d20531e9041d}{Setup\-Queue} ()
+\begin{DoxyCompactList}\small\item\em Create priority queue object for cell builder. \end{DoxyCompactList}\item 
+void \hyperlink{classCoastline_ae2f97f82c5094636ac2bf6170f8a9613}{Transport\-Sediment} (double \&Time\-Delta, \hyperlink{classWave}{Wave} The\-Wave, int Flux\-Type=1, int Ref\-Diff\-Flag=1, double Flux\-Fraction=0, double Lost\-Flux\-Fraction=0)
+\item 
+void \hyperlink{classCoastline_aa454dcdb2dd54d65329831bd747ed22d}{Calculate\-Flux} (int i, int Flux\-Type)
+\begin{DoxyCompactList}\small\item\em Calculate volumetric sediment fluxes. \end{DoxyCompactList}\item 
+double \hyperlink{classCoastline_ab9e46b4dedb2dcce9f28112ba732088c}{Solve\-Quadratic} (int i)
+\begin{DoxyCompactList}\small\item\em Perform quadratic solution for position change of a cell. \end{DoxyCompactList}\item 
+double \hyperlink{classCoastline_ad61c1c09050f4351a8fafca421f0979b}{Solve\-Cubic} (int i)
+\begin{DoxyCompactList}\small\item\em Perform cubic solution for position change of a cell. \end{DoxyCompactList}\item 
+int \hyperlink{classCoastline_abe2c7858ba09dad8cde3ecf6b0ee76b3}{get\-\_\-\-No\-Nodes} () const 
+\begin{DoxyCompactList}\small\item\em Return number of nodes in coastline. \end{DoxyCompactList}\item 
+vector$<$ double $>$ \hyperlink{classCoastline_ae9b780d557c0f40a1b3cb1a33cb8aa8b}{get\-\_\-\-X} () const 
+\begin{DoxyCompactList}\small\item\em Return coastline X-\/values. \end{DoxyCompactList}\item 
+vector$<$ double $>$ \hyperlink{classCoastline_a239c8c4e6937f3377818d3173c79a07b}{get\-\_\-\-Y} () const 
+\begin{DoxyCompactList}\small\item\em Return coastline Y-\/values. \end{DoxyCompactList}\item 
+vector$<$ double $>$ \hyperlink{classCoastline_a81187adcf6c1e4dc57649bca73d59fa0}{get\-\_\-\-Orientation} () const 
+\begin{DoxyCompactList}\small\item\em Return coastline orientation. \end{DoxyCompactList}\item 
+vector$<$ double $>$ \hyperlink{classCoastline_a530b063c59daef1c81bb1de4eb4962e9}{get\-\_\-\-Flux\-Orientation} () const 
+\begin{DoxyCompactList}\small\item\em Return coastline flux orientation. \end{DoxyCompactList}\item 
+vector$<$ double $>$ \hyperlink{classCoastline_abf2c2556a4b9e26291e8abf053d605ac}{get\-\_\-\-Shadows} () const 
+\begin{DoxyCompactList}\small\item\em Return coastal shadows. \end{DoxyCompactList}\item 
+int \hyperlink{classCoastline_ab724bac5ff022c81a19184afce61b68d}{get\-\_\-\-Start\-Boundary} () const 
+\begin{DoxyCompactList}\small\item\em Return start boundary condition.  to return the private member Start\-Boundary, the boundary condition at the start end of the vector. Currently, Start\-Boundary and End\-Boundary must have the same value. 1 = Periodic boundary, 2 = Fixed Boundary (with or without sediment flux). \end{DoxyCompactList}\item 
+int \hyperlink{classCoastline_a40dae3894acfd8081846efe7dfcf081a}{get\-\_\-\-End\-Boundary} () const 
+\begin{DoxyCompactList}\small\item\em Return end boundary condition.  to return the private member End\-Boundary, the boundary condition at the end of the vector. Currently, Start\-Boundary and End\-Boundary must have the same value. 1 = Periodic boundary, 2 = Fixed Boundary (with or without sediment flux). \end{DoxyCompactList}\item 
+int \hyperlink{classCoastline_a30d5bb398d4e221686bb7dd29b012e74}{get\-\_\-\-Mean\-Node\-Spacing} () const 
+\begin{DoxyCompactList}\small\item\em Return desired mean node spacing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+coastline class object for evolving a vector coastline. 
+
+The coastline class object is the main object used in evolving a one-\/line coast. It consists of paired X, Y vectors which describe the location of the coastline, a series of vectors describing the coastline and coastal cell geometry, and a series of functions with which to transform waves impinging on the coast, calculate alongshore sediment transport and update the coastline position during a model timestep. \begin{DoxyAuthor}{Author}
+Martin D. Hurst 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+28/10/2015 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCoastline_ab936a554bb354b7311555ed83348f608}{\index{Coastline@{Coastline}!Coastline@{Coastline}}
+\index{Coastline@{Coastline}!Coastline@{Coastline}}
+\subsubsection[{Coastline}]{\setlength{\rightskip}{0pt plus 5cm}Coastline\-::\-Coastline (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classCoastline_ab936a554bb354b7311555ed83348f608}
+
+
+Initialise function. This is an empty intialisation and thus throws an error. 
+
+\begin{DoxyAuthor}{Author}
+Martin D. Hurst 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+28/10/2015 
+\end{DoxyDate}
+\hypertarget{classCoastline_a64f685e01116a4e79055a07632359221}{\index{Coastline@{Coastline}!Coastline@{Coastline}}
+\index{Coastline@{Coastline}!Coastline@{Coastline}}
+\subsubsection[{Coastline}]{\setlength{\rightskip}{0pt plus 5cm}Coastline\-::\-Coastline (
+\begin{DoxyParamCaption}
+\item[{string}]{xyfilename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classCoastline_a64f685e01116a4e79055a07632359221}
+
+
+Initialise function. Creates a \hyperlink{classCoastline}{Coastline} object from a file containing x and y data. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classCoastline}{Coastline} 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em xyfilename} & String, the file containing the coastline x and y coordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Martin D. Hurst 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+28/10/2015 
+\end{DoxyDate}
+\hypertarget{classCoastline_a4c1f09b298f867ecc1a7616ae1e7a6a5}{\index{Coastline@{Coastline}!Coastline@{Coastline}}
+\index{Coastline@{Coastline}!Coastline@{Coastline}}
+\subsubsection[{Coastline}]{\setlength{\rightskip}{0pt plus 5cm}Coastline\-::\-Coastline (
+\begin{DoxyParamCaption}
+\item[{string}]{xyfilename, }
+\item[{float}]{Start\-Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classCoastline_a4c1f09b298f867ecc1a7616ae1e7a6a5}
+
+
+Initialise function. Creates a \hyperlink{classCoastline}{Coastline} object from a file containing x and y data at a specified time. 
+
+File format is the same as that outputted by the Write\-Coast method. \begin{DoxyReturn}{Returns}
+\hyperlink{classCoastline}{Coastline} 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em xyfilename} & String, the file containing the coastline x and y coordinates \\
+\hline
+{\em Start\-Time} & Float, the time to get at which to get x and y data from file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Martin D. Hurst 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+28/10/2015 
+\end{DoxyDate}
+\hypertarget{classCoastline_a242aa493f86e0b76c5866caf2e3dd2bf}{\index{Coastline@{Coastline}!Coastline@{Coastline}}
+\index{Coastline@{Coastline}!Coastline@{Coastline}}
+\subsubsection[{Coastline}]{\setlength{\rightskip}{0pt plus 5cm}Coastline\-::\-Coastline (
+\begin{DoxyParamCaption}
+\item[{int}]{Mean\-Node\-Spacing, }
+\item[{double}]{Coast\-Length, }
+\item[{double}]{Trend, }
+\item[{int}]{Start\-Boundary, }
+\item[{int}]{End\-Boundary}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classCoastline_a242aa493f86e0b76c5866caf2e3dd2bf}
+
+
+Initialise function. Creates a \hyperlink{classCoastline}{Coastline} object as a straight line following an azimuth. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classCoastline}{Coastline} 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em Mean\-Node\-Spacing} & Int, the average distance between coastal nodes (metres) \\
+\hline
+{\em Coast\-Length} & Double, the length of the coastline to be created \\
+\hline
+{\em Trend} & Double, the azimuth direction in which to create the coast. \\
+\hline
+{\em Start\-Boundary,the} & boundary condition at the start of the line (1=fixed, 2=periodic) \\
+\hline
+{\em End\-Boundary,the} & boundary condition at the end of the line (1=fixed, 2=periodic), must be same as Start\-Boundary (for the moment). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Martin D. Hurst 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+28/10/2015 Initialise coastline as a straight line. 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCoastline_aa454dcdb2dd54d65329831bd747ed22d}{\index{Coastline@{Coastline}!Calculate\-Flux@{Calculate\-Flux}}
+\index{Calculate\-Flux@{Calculate\-Flux}!Coastline@{Coastline}}
+\subsubsection[{Calculate\-Flux}]{\setlength{\rightskip}{0pt plus 5cm}void Coastline\-::\-Calculate\-Flux (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int}]{Flux\-Type}
+\end{DoxyParamCaption}
+)}}\label{classCoastline_aa454dcdb2dd54d65329831bd747ed22d}
+
+
+Calculate volumetric sediment fluxes. 
+
+Evaluates the chosen sediment flux law at node i 
+\begin{DoxyParams}{Parameters}
+{\em i} & Int, the node index \\
+\hline
+{\em Flux\-Type} & Int, 1 = C\-E\-R\-C equation, others are yet to be implemented, default is 1. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Martin D. Hurst 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+29/10/2015 
+\end{DoxyDate}
+\hypertarget{classCoastline_a40dae3894acfd8081846efe7dfcf081a}{\index{Coastline@{Coastline}!get\-\_\-\-End\-Boundary@{get\-\_\-\-End\-Boundary}}
+\index{get\-\_\-\-End\-Boundary@{get\-\_\-\-End\-Boundary}!Coastline@{Coastline}}
+\subsubsection[{get\-\_\-\-End\-Boundary}]{\setlength{\rightskip}{0pt plus 5cm}int Coastline\-::get\-\_\-\-End\-Boundary (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classCoastline_a40dae3894acfd8081846efe7dfcf081a}
+
+
+Return end boundary condition.  to return the private member End\-Boundary, the boundary condition at the end of the vector. Currently, Start\-Boundary and End\-Boundary must have the same value. 1 = Periodic boundary, 2 = Fixed Boundary (with or without sediment flux). 
+
+\begin{DoxyReturn}{Returns}
+Int, End\-Boundary condition 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Martin D. Hurst 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+8/1/2014 
+\end{DoxyDate}
+\hypertarget{classCoastline_a530b063c59daef1c81bb1de4eb4962e9}{\index{Coastline@{Coastline}!get\-\_\-\-Flux\-Orientation@{get\-\_\-\-Flux\-Orientation}}
+\index{get\-\_\-\-Flux\-Orientation@{get\-\_\-\-Flux\-Orientation}!Coastline@{Coastline}}
+\subsubsection[{get\-\_\-\-Flux\-Orientation}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$double$>$ Coastline\-::get\-\_\-\-Flux\-Orientation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classCoastline_a530b063c59daef1c81bb1de4eb4962e9}
+
+
+Return coastline flux orientation. 
+
+Function to return the private member Flux\-Orientation, the azimuth direction of the line connecting the node of interest to the next node in the vector (2-\/cell orientation). This Flux\-Orientation is used to transform waves and for determining the amount of alongshore sediment transport. \begin{DoxyReturn}{Returns}
+vector$<$double$>$, Flux\-Orientation values of the coastline 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Martin D. Hurst 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+6/1/2014 
+\end{DoxyDate}
+\hypertarget{classCoastline_a30d5bb398d4e221686bb7dd29b012e74}{\index{Coastline@{Coastline}!get\-\_\-\-Mean\-Node\-Spacing@{get\-\_\-\-Mean\-Node\-Spacing}}
+\index{get\-\_\-\-Mean\-Node\-Spacing@{get\-\_\-\-Mean\-Node\-Spacing}!Coastline@{Coastline}}
+\subsubsection[{get\-\_\-\-Mean\-Node\-Spacing}]{\setlength{\rightskip}{0pt plus 5cm}int Coastline\-::get\-\_\-\-Mean\-Node\-Spacing (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classCoastline_a30d5bb398d4e221686bb7dd29b012e74}
+
+
+Return desired mean node spacing. 
+
+Function to return the private member Mean\-Node\-Spacing, the desired mean node spacing for the model. \begin{DoxyReturn}{Returns}
+Int, Mean\-Node\-Spacing 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Martin D. Hurst 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+8/1/2014 
+\end{DoxyDate}
+\hypertarget{classCoastline_abe2c7858ba09dad8cde3ecf6b0ee76b3}{\index{Coastline@{Coastline}!get\-\_\-\-No\-Nodes@{get\-\_\-\-No\-Nodes}}
+\index{get\-\_\-\-No\-Nodes@{get\-\_\-\-No\-Nodes}!Coastline@{Coastline}}
+\subsubsection[{get\-\_\-\-No\-Nodes}]{\setlength{\rightskip}{0pt plus 5cm}int Coastline\-::get\-\_\-\-No\-Nodes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classCoastline_abe2c7858ba09dad8cde3ecf6b0ee76b3}
+
+
+Return number of nodes in coastline. 
+
+Function to return the private member No\-Nodes value, the number of nodes in the coastline object \begin{DoxyReturn}{Returns}
+Int, Number of nodes 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Martin D. Hurst 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+6/1/2014 
+\end{DoxyDate}
+\hypertarget{classCoastline_a81187adcf6c1e4dc57649bca73d59fa0}{\index{Coastline@{Coastline}!get\-\_\-\-Orientation@{get\-\_\-\-Orientation}}
+\index{get\-\_\-\-Orientation@{get\-\_\-\-Orientation}!Coastline@{Coastline}}
+\subsubsection[{get\-\_\-\-Orientation}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$double$>$ Coastline\-::get\-\_\-\-Orientation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classCoastline_a81187adcf6c1e4dc57649bca73d59fa0}
+
+
+Return coastline orientation. 
+
+Function to return the private member Orientation, the azimuth direction of the line connecting the two adjacent nodes to the node of interest (3-\/cell orientation). The evolving cosatal node advances or retreats perpendicular to this orientation. \begin{DoxyReturn}{Returns}
+vector$<$double$>$, Orientation values of the coastline 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Martin D. Hurst 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+6/1/2014 
+\end{DoxyDate}
+\hypertarget{classCoastline_abf2c2556a4b9e26291e8abf053d605ac}{\index{Coastline@{Coastline}!get\-\_\-\-Shadows@{get\-\_\-\-Shadows}}
+\index{get\-\_\-\-Shadows@{get\-\_\-\-Shadows}!Coastline@{Coastline}}
+\subsubsection[{get\-\_\-\-Shadows}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$double$>$ Coastline\-::get\-\_\-\-Shadows (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classCoastline_abf2c2556a4b9e26291e8abf053d605ac}
+
+
+Return coastal shadows. 
+
+Function to return the private member Shadows, an integer vector which describes whether or not a node is in shadow, or casts a shadow, or is open coast. \begin{DoxyReturn}{Returns}
+vector$<$double$>$, Shadows values of the coastline 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Martin D. Hurst 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+6/1/2014 
+\end{DoxyDate}
+\hypertarget{classCoastline_ab724bac5ff022c81a19184afce61b68d}{\index{Coastline@{Coastline}!get\-\_\-\-Start\-Boundary@{get\-\_\-\-Start\-Boundary}}
+\index{get\-\_\-\-Start\-Boundary@{get\-\_\-\-Start\-Boundary}!Coastline@{Coastline}}
+\subsubsection[{get\-\_\-\-Start\-Boundary}]{\setlength{\rightskip}{0pt plus 5cm}int Coastline\-::get\-\_\-\-Start\-Boundary (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classCoastline_ab724bac5ff022c81a19184afce61b68d}
+
+
+Return start boundary condition.  to return the private member Start\-Boundary, the boundary condition at the start end of the vector. Currently, Start\-Boundary and End\-Boundary must have the same value. 1 = Periodic boundary, 2 = Fixed Boundary (with or without sediment flux). 
+
+\begin{DoxyReturn}{Returns}
+Int, Start\-Boundary condition 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Martin D. Hurst 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+8/1/2014 
+\end{DoxyDate}
+\hypertarget{classCoastline_ae9b780d557c0f40a1b3cb1a33cb8aa8b}{\index{Coastline@{Coastline}!get\-\_\-\-X@{get\-\_\-\-X}}
+\index{get\-\_\-\-X@{get\-\_\-\-X}!Coastline@{Coastline}}
+\subsubsection[{get\-\_\-\-X}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$double$>$ Coastline\-::get\-\_\-\-X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classCoastline_ae9b780d557c0f40a1b3cb1a33cb8aa8b}
+
+
+Return coastline X-\/values. 
+
+Function to return the private member X values \begin{DoxyReturn}{Returns}
+vector$<$double$>$, X coordinate values of the coastline 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Martin D. Hurst 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/1/2014 
+\end{DoxyDate}
+\hypertarget{classCoastline_a239c8c4e6937f3377818d3173c79a07b}{\index{Coastline@{Coastline}!get\-\_\-\-Y@{get\-\_\-\-Y}}
+\index{get\-\_\-\-Y@{get\-\_\-\-Y}!Coastline@{Coastline}}
+\subsubsection[{get\-\_\-\-Y}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$double$>$ Coastline\-::get\-\_\-\-Y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classCoastline_a239c8c4e6937f3377818d3173c79a07b}
+
+
+Return coastline Y-\/values. 
+
+Function to return the private member Y values \begin{DoxyReturn}{Returns}
+vector$<$double$>$, Y coordinate values of the coastline 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Martin D. Hurst 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+7/1/2014 
+\end{DoxyDate}
+\hypertarget{classCoastline_ad901fe37293a0c16c37642d8f8d6e481}{\index{Coastline@{Coastline}!Read\-Coast@{Read\-Coast}}
+\index{Read\-Coast@{Read\-Coast}!Coastline@{Coastline}}
+\subsubsection[{Read\-Coast}]{\setlength{\rightskip}{0pt plus 5cm}void Coastline\-::\-Read\-Coast (
+\begin{DoxyParamCaption}
+\item[{string}]{Input\-File\-Name, }
+\item[{double}]{Time}
+\end{DoxyParamCaption}
+)}}\label{classCoastline_ad901fe37293a0c16c37642d8f8d6e481}
+
+
+Function to read a coastline from a file at a given time. 
+
+File format is the same as that outputted by the Write\-Coast method. 
+\begin{DoxyParams}{Parameters}
+{\em Input\-File\-Name} & String, the file containing the coastline x and y coordinates \\
+\hline
+{\em Time} & Double, the time to get at which to get x and y data from file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Martin D. Hurst 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+28/10/2015
+\end{DoxyDate}
+Reads a coastline x and y coordinates from an inputfile at the specified time. Called by the initialiser functions. M\-D\-H 6/1/14 \hypertarget{classCoastline_a0642cbf3fc04602bf1d2d20531e9041d}{\index{Coastline@{Coastline}!Setup\-Queue@{Setup\-Queue}}
+\index{Setup\-Queue@{Setup\-Queue}!Coastline@{Coastline}}
+\subsubsection[{Setup\-Queue}]{\setlength{\rightskip}{0pt plus 5cm}void Coastline\-::\-Setup\-Queue (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCoastline_a0642cbf3fc04602bf1d2d20531e9041d}
+
+
+Create priority queue object for cell builder. 
+
+Called before Build\-Cell\-Geometries to initiate a priority queue Function to find shoreface triangles and create priority queue for building cells, starting with the most convex out parts of the coastline \begin{DoxyAuthor}{Author}
+Martin D. Hurst 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+29/10/2015 
+\end{DoxyDate}
+\hypertarget{classCoastline_ad61c1c09050f4351a8fafca421f0979b}{\index{Coastline@{Coastline}!Solve\-Cubic@{Solve\-Cubic}}
+\index{Solve\-Cubic@{Solve\-Cubic}!Coastline@{Coastline}}
+\subsubsection[{Solve\-Cubic}]{\setlength{\rightskip}{0pt plus 5cm}double Coastline\-::\-Solve\-Cubic (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{classCoastline_ad61c1c09050f4351a8fafca421f0979b}
+
+
+Perform cubic solution for position change of a cell. 
+
+Position change of the coast is found to be a cubic function of volume change and the geometry of the cell when it does not extend to the bottom of the shoreface (see Hurst et al. 2015?). 
+\begin{DoxyParams}{Parameters}
+{\em i} & Int, the node index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Martin D. Hurst 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+29/10/2015 
+\end{DoxyDate}
+\hypertarget{classCoastline_ab9e46b4dedb2dcce9f28112ba732088c}{\index{Coastline@{Coastline}!Solve\-Quadratic@{Solve\-Quadratic}}
+\index{Solve\-Quadratic@{Solve\-Quadratic}!Coastline@{Coastline}}
+\subsubsection[{Solve\-Quadratic}]{\setlength{\rightskip}{0pt plus 5cm}double Coastline\-::\-Solve\-Quadratic (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{classCoastline_ab9e46b4dedb2dcce9f28112ba732088c}
+
+
+Perform quadratic solution for position change of a cell. 
+
+Position change of the coast is found to be a quadratic function of volume change and the geometry of the cell when it extends to the bottom of the shoreface (see Hurst et al. 2015?). 
+\begin{DoxyParams}{Parameters}
+{\em i} & Int, the node index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Martin D. Hurst 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+29/10/2015 
+\end{DoxyDate}
+\hypertarget{classCoastline_ae2f97f82c5094636ac2bf6170f8a9613}{\index{Coastline@{Coastline}!Transport\-Sediment@{Transport\-Sediment}}
+\index{Transport\-Sediment@{Transport\-Sediment}!Coastline@{Coastline}}
+\subsubsection[{Transport\-Sediment}]{\setlength{\rightskip}{0pt plus 5cm}void Coastline\-::\-Transport\-Sediment (
+\begin{DoxyParamCaption}
+\item[{double \&}]{Time\-Delta, }
+\item[{{\bf Wave}}]{The\-Wave, }
+\item[{int}]{Flux\-Type = {\ttfamily 1}, }
+\item[{int}]{Ref\-Diff\-Flag = {\ttfamily 1}, }
+\item[{double}]{Flux\-Fraction = {\ttfamily 0}, }
+\item[{double}]{Lost\-Flux\-Fraction = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classCoastline_ae2f97f82c5094636ac2bf6170f8a9613}
+\hypertarget{classCoastline_a032c2f5c5c956daca79c5df94e56caf7}{\index{Coastline@{Coastline}!Write\-Coast@{Write\-Coast}}
+\index{Write\-Coast@{Write\-Coast}!Coastline@{Coastline}}
+\subsubsection[{Write\-Coast}]{\setlength{\rightskip}{0pt plus 5cm}void Coastline\-::\-Write\-Coast (
+\begin{DoxyParamCaption}
+\item[{string}]{Output\-File\-Name, }
+\item[{double}]{Time}
+\end{DoxyParamCaption}
+)}}\label{classCoastline_a032c2f5c5c956daca79c5df94e56caf7}
+
+
+Function to write a coastline to a file at a given time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Output\-File\-Name} & String, the file to write the coastline x and y coordinates \\
+\hline
+{\em Time} & Double, the model time written to file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Martin D. Hurst 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+28/10/2015
+\end{DoxyDate}
+Writes the time and a coastline x and y coordinates from the coastline object to an outputfile. For saving model results. M\-D\-H 6/1/14 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{coastline_8hpp}{coastline.\-hpp}\item 
+\hyperlink{coastline_8cpp}{coastline.\-cpp}\end{DoxyCompactItemize}

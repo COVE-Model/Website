@@ -1,0 +1,106 @@
+\hypertarget{classRealWaveClimate}{\section{Real\-Wave\-Climate Class Reference}
+\label{classRealWaveClimate}\index{Real\-Wave\-Climate@{Real\-Wave\-Climate}}
+}
+
+
+Real wave climate object, reading wave data from a text file containing wave direction, height and period.  
+
+
+
+
+{\ttfamily \#include $<$waveclimate.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRealWaveClimate_a6cd62899d9abe31203407efe5ab98964}{Real\-Wave\-Climate} ()
+\begin{DoxyCompactList}\small\item\em Initialise function. This is an empty intialisation and thus throws an error. \end{DoxyCompactList}\item 
+\hyperlink{classRealWaveClimate_aaec0f4a67f58040ebf67a41b5a794a12}{Real\-Wave\-Climate} (string Wave\-File\-Name)
+\begin{DoxyCompactList}\small\item\em Initialise function. Creates a real wave climate object from a specified text file. \end{DoxyCompactList}\item 
+\hyperlink{classWave}{Wave} \hyperlink{classRealWaveClimate_a9c1fb5012a825cf23f2702275f271913}{Get\-\_\-\-Wave} ()
+\begin{DoxyCompactList}\small\item\em Function to sample a wave from the wave climate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Real wave climate object, reading wave data from a text file containing wave direction, height and period. 
+
+\begin{DoxyAuthor}{Author}
+Martin D. Hurst 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+26/10/2015 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRealWaveClimate_a6cd62899d9abe31203407efe5ab98964}{\index{Real\-Wave\-Climate@{Real\-Wave\-Climate}!Real\-Wave\-Climate@{Real\-Wave\-Climate}}
+\index{Real\-Wave\-Climate@{Real\-Wave\-Climate}!RealWaveClimate@{Real\-Wave\-Climate}}
+\subsubsection[{Real\-Wave\-Climate}]{\setlength{\rightskip}{0pt plus 5cm}Real\-Wave\-Climate\-::\-Real\-Wave\-Climate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRealWaveClimate_a6cd62899d9abe31203407efe5ab98964}
+
+
+Initialise function. This is an empty intialisation and thus throws an error. 
+
+\begin{DoxyAuthor}{Author}
+Martin D. Hurst 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+26/10/2015 
+\end{DoxyDate}
+\hypertarget{classRealWaveClimate_aaec0f4a67f58040ebf67a41b5a794a12}{\index{Real\-Wave\-Climate@{Real\-Wave\-Climate}!Real\-Wave\-Climate@{Real\-Wave\-Climate}}
+\index{Real\-Wave\-Climate@{Real\-Wave\-Climate}!RealWaveClimate@{Real\-Wave\-Climate}}
+\subsubsection[{Real\-Wave\-Climate}]{\setlength{\rightskip}{0pt plus 5cm}Real\-Wave\-Climate\-::\-Real\-Wave\-Climate (
+\begin{DoxyParamCaption}
+\item[{string}]{Wave\-File\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRealWaveClimate_aaec0f4a67f58040ebf67a41b5a794a12}
+
+
+Initialise function. Creates a real wave climate object from a specified text file. 
+
+Reads wave data from a text file. File format is three columns, the first is wave directions (azimuth), the second is wave periods (seconds) and the third is wave height (metres). The function assumes that the file as 1 header line. \begin{DoxyReturn}{Returns}
+\hyperlink{classRealWaveClimate}{Real\-Wave\-Climate} 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em Wave\-File\-Name} & String, name of the wave file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Martin D. Hurst 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+26/10/2015 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRealWaveClimate_a9c1fb5012a825cf23f2702275f271913}{\index{Real\-Wave\-Climate@{Real\-Wave\-Climate}!Get\-\_\-\-Wave@{Get\-\_\-\-Wave}}
+\index{Get\-\_\-\-Wave@{Get\-\_\-\-Wave}!RealWaveClimate@{Real\-Wave\-Climate}}
+\subsubsection[{Get\-\_\-\-Wave}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Wave} Real\-Wave\-Climate\-::\-Get\-\_\-\-Wave (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRealWaveClimate_a9c1fb5012a825cf23f2702275f271913}
+
+
+Function to sample a wave from the wave climate. 
+
+Function updates an index counter so that waves are sampled from the \hyperlink{classRealWaveClimate}{Real\-Wave\-Climate} object sequentially. \begin{DoxyReturn}{Returns}
+\hyperlink{classWave}{Wave} object 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Martin D. Hurst 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+26/10/2015 
+\end{DoxyDate}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{waveclimate_8hpp}{waveclimate.\-hpp}\item 
+\hyperlink{waveclimate_8cpp}{waveclimate.\-cpp}\end{DoxyCompactItemize}

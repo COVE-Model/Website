@@ -1,0 +1,140 @@
+\hypertarget{classBimodalWaveClimate}{\section{Bimodal\-Wave\-Climate Class Reference}
+\label{classBimodalWaveClimate}\index{Bimodal\-Wave\-Climate@{Bimodal\-Wave\-Climate}}
+}
+
+
+Bimodal wave climate object, described by two \hyperlink{classGaussianWaveClimate}{Gaussian\-Wave\-Climate} objects.  
+
+
+
+
+{\ttfamily \#include $<$waveclimate.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBimodalWaveClimate_a777945ca022955d69afcc4f4f41a6499}{Bimodal\-Wave\-Climate} ()
+\begin{DoxyCompactList}\small\item\em Initialise function. This is an empty intialisation and thus throws an error. \end{DoxyCompactList}\item 
+\hyperlink{classBimodalWaveClimate_a78ead7837c7926ac7ef9d132d8a5c18a}{Bimodal\-Wave\-Climate} (double Fraction\-Wave\-Direction1, double Offshore\-Mean\-Wave\-Period1, double Offshore\-St\-D\-Wave\-Period1, double Offshore\-Mean\-Wave\-Direction1, double Offshore\-St\-D\-Wave\-Direction1, double Offshore\-Mean\-Wave\-Height1, double Offshore\-St\-D\-Wave\-Height1, double Offshore\-Mean\-Wave\-Period2, double Offshore\-St\-D\-Wave\-Period2, double Offshore\-Mean\-Wave\-Direction2, double Offshore\-St\-D\-Wave\-Direction2, double Offshore\-Mean\-Wave\-Height2, double Offshore\-St\-D\-Wave\-Height2)
+\begin{DoxyCompactList}\small\item\em Initialise function. Creates a Bimodal wave climate object from two Gaussian\-Wave\-Cliamte objects according to wave parameters. \end{DoxyCompactList}\item 
+\hyperlink{classWave}{Wave} \hyperlink{classBimodalWaveClimate_a6aa9562b9beaaafbae60e85e68337e32}{Get\-\_\-\-Wave} ()
+\begin{DoxyCompactList}\small\item\em Function to sample a random wave from the wave climate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Bimodal wave climate object, described by two \hyperlink{classGaussianWaveClimate}{Gaussian\-Wave\-Climate} objects. 
+
+\begin{DoxyAuthor}{Author}
+Martin D. Hurst 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+26/10/2015 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBimodalWaveClimate_a777945ca022955d69afcc4f4f41a6499}{\index{Bimodal\-Wave\-Climate@{Bimodal\-Wave\-Climate}!Bimodal\-Wave\-Climate@{Bimodal\-Wave\-Climate}}
+\index{Bimodal\-Wave\-Climate@{Bimodal\-Wave\-Climate}!BimodalWaveClimate@{Bimodal\-Wave\-Climate}}
+\subsubsection[{Bimodal\-Wave\-Climate}]{\setlength{\rightskip}{0pt plus 5cm}Bimodal\-Wave\-Climate\-::\-Bimodal\-Wave\-Climate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classBimodalWaveClimate_a777945ca022955d69afcc4f4f41a6499}
+
+
+Initialise function. This is an empty intialisation and thus throws an error. 
+
+\begin{DoxyAuthor}{Author}
+Martin D. Hurst 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+26/10/2015 
+\end{DoxyDate}
+\hypertarget{classBimodalWaveClimate_a78ead7837c7926ac7ef9d132d8a5c18a}{\index{Bimodal\-Wave\-Climate@{Bimodal\-Wave\-Climate}!Bimodal\-Wave\-Climate@{Bimodal\-Wave\-Climate}}
+\index{Bimodal\-Wave\-Climate@{Bimodal\-Wave\-Climate}!BimodalWaveClimate@{Bimodal\-Wave\-Climate}}
+\subsubsection[{Bimodal\-Wave\-Climate}]{\setlength{\rightskip}{0pt plus 5cm}Bimodal\-Wave\-Climate\-::\-Bimodal\-Wave\-Climate (
+\begin{DoxyParamCaption}
+\item[{double}]{Fraction\-Wave\-Direction1, }
+\item[{double}]{Offshore\-Mean\-Wave\-Period1, }
+\item[{double}]{Offshore\-St\-D\-Wave\-Period1, }
+\item[{double}]{Offshore\-Mean\-Wave\-Direction1, }
+\item[{double}]{Offshore\-St\-D\-Wave\-Direction1, }
+\item[{double}]{Offshore\-Mean\-Wave\-Height1, }
+\item[{double}]{Offshore\-St\-D\-Wave\-Height1, }
+\item[{double}]{Offshore\-Mean\-Wave\-Period2, }
+\item[{double}]{Offshore\-St\-D\-Wave\-Period2, }
+\item[{double}]{Offshore\-Mean\-Wave\-Direction2, }
+\item[{double}]{Offshore\-St\-D\-Wave\-Direction2, }
+\item[{double}]{Offshore\-Mean\-Wave\-Height2, }
+\item[{double}]{Offshore\-St\-D\-Wave\-Height2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classBimodalWaveClimate_a78ead7837c7926ac7ef9d132d8a5c18a}
+
+
+Initialise function. Creates a Bimodal wave climate object from two Gaussian\-Wave\-Cliamte objects according to wave parameters. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classBimodalWaveClimate}{Bimodal\-Wave\-Climate} 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em Offshore\-Mean\-Wave\-Period1} & Double, the mean wave period for the first mode (seconds). \\
+\hline
+{\em Offshore\-Mean\-Wave\-Height1} & Double, the mean wave height for the first mode (metres). \\
+\hline
+{\em Offshore\-Mean\-Wave\-Direction1} & Double, the mean wave direction for the first mode (azimuth). \\
+\hline
+{\em Offshore\-St\-D\-Wave\-Period1} & Double, the standard deviation of wave period for the first mode (seconds). \\
+\hline
+{\em Offshore\-St\-D\-Wave\-Height1} & Double, the standard deviation of wave height for the first mode (metres). \\
+\hline
+{\em Offshore\-St\-D\-Wave\-Direction1} & Double, the standard deviation of wave direction for the first mode (azimuth). \\
+\hline
+{\em Offshore\-Mean\-Wave\-Period2} & Double, the mean wave period for the second mode (seconds). \\
+\hline
+{\em Offshore\-Mean\-Wave\-Height2} & Double, the mean wave height for the second mode (metres). \\
+\hline
+{\em Offshore\-Mean\-Wave\-Direction2} & Double, the mean wave direction for the second mode (azimuth). \\
+\hline
+{\em Offshore\-St\-D\-Wave\-Period2} & Double, the standard deviation of wave period for the second mode (seconds). \\
+\hline
+{\em Offshore\-St\-D\-Wave\-Height2} & Double, the standard deviation of wave height for the second mode (metres). \\
+\hline
+{\em Offshore\-St\-D\-Wave\-Direction2} & Double, the standard deviation of wave direction for the second mode (azimuth). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Martin D. Hurst 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+26/10/2015 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBimodalWaveClimate_a6aa9562b9beaaafbae60e85e68337e32}{\index{Bimodal\-Wave\-Climate@{Bimodal\-Wave\-Climate}!Get\-\_\-\-Wave@{Get\-\_\-\-Wave}}
+\index{Get\-\_\-\-Wave@{Get\-\_\-\-Wave}!BimodalWaveClimate@{Bimodal\-Wave\-Climate}}
+\subsubsection[{Get\-\_\-\-Wave}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Wave} Bimodal\-Wave\-Climate\-::\-Get\-\_\-\-Wave (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classBimodalWaveClimate_a6aa9562b9beaaafbae60e85e68337e32}
+
+
+Function to sample a random wave from the wave climate. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classWave}{Wave} object 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Martin D. Hurst 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+26/10/2015 
+\end{DoxyDate}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{waveclimate_8hpp}{waveclimate.\-hpp}\item 
+\hyperlink{waveclimate_8cpp}{waveclimate.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,36 @@
+\hypertarget{waveclimate_8hpp}{\section{waveclimate.\-hpp File Reference}
+\label{waveclimate_8hpp}\index{waveclimate.\-hpp@{waveclimate.\-hpp}}
+}
+
+
+wave climate objects for offshore wave conditions  
+
+
+{\ttfamily \#include $<$math.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$cstring$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classWave}{Wave}
+\begin{DoxyCompactList}\small\item\em Single wave object, containing a direction, height and period. \end{DoxyCompactList}\item 
+class \hyperlink{classSingleWaveClimate}{Single\-Wave\-Climate}
+\begin{DoxyCompactList}\small\item\em Single wave climate object, containing a direction, height and period. \end{DoxyCompactList}\item 
+class \hyperlink{classGaussianWaveClimate}{Gaussian\-Wave\-Climate}
+\begin{DoxyCompactList}\small\item\em Gaussian wave climate object, described by mean and standard deviation wave direction, height and period. \end{DoxyCompactList}\item 
+class \hyperlink{classRealWaveClimate}{Real\-Wave\-Climate}
+\begin{DoxyCompactList}\small\item\em Real wave climate object, reading wave data from a text file containing wave direction, height and period. \end{DoxyCompactList}\item 
+class \hyperlink{classUAWaveClimate}{U\-A\-Wave\-Climate}
+\begin{DoxyCompactList}\small\item\em Four-\/bin P\-D\-F wave climate object following Ashton \& Murray (2006). \end{DoxyCompactList}\item 
+class \hyperlink{classBimodalWaveClimate}{Bimodal\-Wave\-Climate}
+\begin{DoxyCompactList}\small\item\em Bimodal wave climate object, described by two \hyperlink{classGaussianWaveClimate}{Gaussian\-Wave\-Climate} objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+wave climate objects for offshore wave conditions \begin{DoxyAuthor}{Author}
+Martin D. Hurst, British Geological Survey
+\end{DoxyAuthor}
+This file contains objects for representing offshore wave conditions for the C\-O\-V\-E model. \hyperlink{classWave}{Wave} climates are described using wave direction (azimuth), significant wave height and wave period. \hyperlink{classWave}{Wave} climates can be intialised as a single wave conditions, a Gaussian distribution of direction, height and period, a bimodal distribution (i.\-e. two Gaussians) or using real wave climate data. \begin{DoxyDate}{Date}
+26/10/2015 
+\end{DoxyDate}
