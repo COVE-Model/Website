@@ -10,6 +10,8 @@ image::COVE_logo_small.png[]
 == Welcome
 This is the website and documentation for COVE, the COastal Vector Evolution model - a vector-based one-line coastal evolution model. The model was presented and used in a http://onlinelibrary.wiley.com/doi/10.1002/2015JF003704/abstract[paper] on the evolution of crenulate bays published in the _Journal of Geophysical Research Earth Surface_ (http://onlinelibrary.wiley.com/doi/10.1002/2015JF003704/abstract[Hurst et al., 2015]). The model is intended for research purposes, exploring coastal behaviour and sensitiviy. If you are interested in working with COVE, we would encourage you to mailto:martin.hurst@glasgow.ac.uk[get in touch] and work with us.
 
+NOTE: This page provides a summary and overview of the COVE model. More extensive documentation and user information can be found at the http://cove-model.github.io/Documentation/[documentation web page].
+
 == Summary
 ====
 - COVE is a ‘one-line’ type shoreline evolution model.
