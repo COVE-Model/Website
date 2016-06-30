@@ -12,6 +12,7 @@ This is the website and documentation for COVE, the COastal Vector Evolution mod
 
 NOTE: This page provides a summary and overview of the COVE model. More extensive documentation and user information can be found at the http://cove-model.github.io/Documentation/[documentation web page].
 
+
 == Summary
 ====
 - COVE is a ‘one-line’ type shoreline evolution model.
